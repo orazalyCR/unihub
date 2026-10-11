@@ -319,6 +319,6 @@ features.s = sys.modules[__name__]
 if __name__ == "__main__":
     init_db()
     port = int(os.environ.get("PORT", 8000))
-    host = os.environ.get("HOST", "127.0.0.1")
+    host = os.environ.get("HOST", "0.0.0.0" if os.environ.get("RENDER") else "127.0.0.1")
     print(f"UniHub: http://{host}:{port}   (база: {DB_PATH})\nОстановить: Ctrl+C")
     ThreadingHTTPServer((host, port), H).serve_forever()
