@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: unihub
+    runtime: python
+    rootDir: unihub
+    buildCommand: python --version
+    startCommand: python server.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PYTHON_VERSION
+        value: 3.12.7

@@ -1,0 +1,1030 @@
+{
+ "students": [
+  {
+   "id": "0-arman",
+   "name": "Arman T.",
+   "university": "AITU",
+   "course": "Software Engineering",
+   "year": "1st year",
+   "subjects": [
+    "Calculus",
+    "C++"
+   ],
+   "format": "Offline",
+   "bio": "Let’s solve problem sets and make sense of the tricky parts.",
+   "tone": "blue"
+  },
+  {
+   "id": "0-aisha",
+   "name": "Aisha N.",
+   "university": "AITU",
+   "course": "Computer Science",
+   "year": "2nd year",
+   "subjects": [
+    "Python",
+    "ICT"
+   ],
+   "format": "Online",
+   "bio": "Happy to compare notes, debug together and share study tips.",
+   "tone": "purple"
+  },
+  {
+   "id": "0-timur",
+   "name": "Timur K.",
+   "university": "AITU",
+   "course": "Business & Management",
+   "year": "1st year",
+   "subjects": [
+    "English",
+    "Calculus"
+   ],
+   "format": "Offline",
+   "bio": "Looking for a regular study partner and a little motivation.",
+   "tone": "green"
+  },
+  {
+   "id": "1-arman",
+   "name": "Aruzhan K.",
+   "university": "ENU",
+   "course": "Software Engineering",
+   "year": "1st year",
+   "subjects": [
+    "Calculus",
+    "C++"
+   ],
+   "format": "Offline",
+   "bio": "Let’s solve problem sets and make sense of the tricky parts.",
+   "tone": "blue"
+  },
+  {
+   "id": "1-aisha",
+   "name": "Miras B.",
+   "university": "ENU",
+   "course": "Computer Science",
+   "year": "2nd year",
+   "subjects": [
+    "Python",
+    "ICT"
+   ],
+   "format": "Online",
+   "bio": "Happy to compare notes, debug together and share study tips.",
+   "tone": "purple"
+  },
+  {
+   "id": "1-timur",
+   "name": "Kamila S.",
+   "university": "ENU",
+   "course": "Business & Management",
+   "year": "1st year",
+   "subjects": [
+    "English",
+    "Calculus"
+   ],
+   "format": "Offline",
+   "bio": "Looking for a regular study partner and a little motivation.",
+   "tone": "green"
+  },
+  {
+   "id": "2-arman",
+   "name": "Daniyar M.",
+   "university": "MNU",
+   "course": "Software Engineering",
+   "year": "1st year",
+   "subjects": [
+    "Calculus",
+    "C++"
+   ],
+   "format": "Offline",
+   "bio": "Let’s solve problem sets and make sense of the tricky parts.",
+   "tone": "blue"
+  },
+  {
+   "id": "2-aisha",
+   "name": "Dana R.",
+   "university": "MNU",
+   "course": "Computer Science",
+   "year": "2nd year",
+   "subjects": [
+    "Python",
+    "ICT"
+   ],
+   "format": "Online",
+   "bio": "Happy to compare notes, debug together and share study tips.",
+   "tone": "purple"
+  },
+  {
+   "id": "2-timur",
+   "name": "Adil D.",
+   "university": "MNU",
+   "course": "Business & Management",
+   "year": "1st year",
+   "subjects": [
+    "English",
+    "Calculus"
+   ],
+   "format": "Offline",
+   "bio": "Looking for a regular study partner and a little motivation.",
+   "tone": "green"
+  },
+  {
+   "id": "3-arman",
+   "name": "Amina S.",
+   "university": "Nazarbayev University",
+   "course": "Software Engineering",
+   "year": "1st year",
+   "subjects": [
+    "Calculus",
+    "C++"
+   ],
+   "format": "Offline",
+   "bio": "Let’s solve problem sets and make sense of the tricky parts.",
+   "tone": "blue"
+  },
+  {
+   "id": "3-aisha",
+   "name": "Alikhan T.",
+   "university": "Nazarbayev University",
+   "course": "Computer Science",
+   "year": "2nd year",
+   "subjects": [
+    "Python",
+    "ICT"
+   ],
+   "format": "Online",
+   "bio": "Happy to compare notes, debug together and share study tips.",
+   "tone": "purple"
+  },
+  {
+   "id": "3-timur",
+   "name": "Zarina K.",
+   "university": "Nazarbayev University",
+   "course": "Business & Management",
+   "year": "1st year",
+   "subjects": [
+    "English",
+    "Calculus"
+   ],
+   "format": "Offline",
+   "bio": "Looking for a regular study partner and a little motivation.",
+   "tone": "green"
+  },
+  {
+   "id": "4-arman",
+   "name": "Nikita V.",
+   "university": "Other",
+   "course": "Software Engineering",
+   "year": "1st year",
+   "subjects": [
+    "Calculus",
+    "C++"
+   ],
+   "format": "Offline",
+   "bio": "Let’s solve problem sets and make sense of the tricky parts.",
+   "tone": "blue"
+  },
+  {
+   "id": "4-aisha",
+   "name": "Sofia L.",
+   "university": "Other",
+   "course": "Computer Science",
+   "year": "2nd year",
+   "subjects": [
+    "Python",
+    "ICT"
+   ],
+   "format": "Online",
+   "bio": "Happy to compare notes, debug together and share study tips.",
+   "tone": "purple"
+  },
+  {
+   "id": "4-timur",
+   "name": "Max A.",
+   "university": "Other",
+   "course": "Business & Management",
+   "year": "1st year",
+   "subjects": [
+    "English",
+    "Calculus"
+   ],
+   "format": "Offline",
+   "bio": "Looking for a regular study partner and a little motivation.",
+   "tone": "green"
+  }
+ ],
+ "roommates": [
+  {
+   "id": "r0a",
+   "name": "Alikhan S.",
+   "university": "AITU",
+   "budget": 100000,
+   "district": "Yesil",
+   "smoking": "Non-smoker",
+   "pets": "No pets",
+   "lifestyle": "Quiet",
+   "sleep": "Early bird",
+   "bio": "First-year student. I like a tidy kitchen, calm evenings and a shared coffee before class.",
+   "tone": "blue"
+  },
+  {
+   "id": "r0b",
+   "name": "Madina K.",
+   "university": "AITU",
+   "budget": 130000,
+   "district": "Nura",
+   "smoking": "Non-smoker",
+   "pets": "Pet-friendly",
+   "lifestyle": "Social",
+   "sleep": "Night owl",
+   "bio": "Easy-going and social. Looking for a roommate who enjoys a good chat and respects personal space.",
+   "tone": "purple"
+  },
+  {
+   "id": "r0c",
+   "name": "Timur R.",
+   "university": "AITU",
+   "budget": 85000,
+   "district": "Almaty",
+   "smoking": "Smoker",
+   "pets": "No pets",
+   "lifestyle": "Balanced",
+   "sleep": "Flexible",
+   "bio": "Into programming, football and cooking. Looking to share a place from November.",
+   "tone": "green"
+  },
+  {
+   "id": "r1a",
+   "name": "Madi B.",
+   "university": "ENU",
+   "budget": 100000,
+   "district": "Yesil",
+   "smoking": "Non-smoker",
+   "pets": "No pets",
+   "lifestyle": "Quiet",
+   "sleep": "Early bird",
+   "bio": "First-year student. I like a tidy kitchen, calm evenings and a shared coffee before class.",
+   "tone": "blue"
+  },
+  {
+   "id": "r1b",
+   "name": "Aigerim T.",
+   "university": "ENU",
+   "budget": 130000,
+   "district": "Nura",
+   "smoking": "Non-smoker",
+   "pets": "Pet-friendly",
+   "lifestyle": "Social",
+   "sleep": "Night owl",
+   "bio": "Easy-going and social. Looking for a roommate who enjoys a good chat and respects personal space.",
+   "tone": "purple"
+  },
+  {
+   "id": "r1c",
+   "name": "Arman A.",
+   "university": "ENU",
+   "budget": 85000,
+   "district": "Almaty",
+   "smoking": "Smoker",
+   "pets": "No pets",
+   "lifestyle": "Balanced",
+   "sleep": "Flexible",
+   "bio": "Into programming, football and cooking. Looking to share a place from November.",
+   "tone": "green"
+  },
+  {
+   "id": "r2a",
+   "name": "Daniyar A.",
+   "university": "MNU",
+   "budget": 100000,
+   "district": "Yesil",
+   "smoking": "Non-smoker",
+   "pets": "No pets",
+   "lifestyle": "Quiet",
+   "sleep": "Early bird",
+   "bio": "First-year student. I like a tidy kitchen, calm evenings and a shared coffee before class.",
+   "tone": "blue"
+  },
+  {
+   "id": "r2b",
+   "name": "Amina D.",
+   "university": "MNU",
+   "budget": 130000,
+   "district": "Nura",
+   "smoking": "Non-smoker",
+   "pets": "Pet-friendly",
+   "lifestyle": "Social",
+   "sleep": "Night owl",
+   "bio": "Easy-going and social. Looking for a roommate who enjoys a good chat and respects personal space.",
+   "tone": "purple"
+  },
+  {
+   "id": "r2c",
+   "name": "Miras S.",
+   "university": "MNU",
+   "budget": 85000,
+   "district": "Almaty",
+   "smoking": "Smoker",
+   "pets": "No pets",
+   "lifestyle": "Balanced",
+   "sleep": "Flexible",
+   "bio": "Into programming, football and cooking. Looking to share a place from November.",
+   "tone": "green"
+  },
+  {
+   "id": "r3a",
+   "name": "Sanzhar K.",
+   "university": "Nazarbayev University",
+   "budget": 100000,
+   "district": "Yesil",
+   "smoking": "Non-smoker",
+   "pets": "No pets",
+   "lifestyle": "Quiet",
+   "sleep": "Early bird",
+   "bio": "First-year student. I like a tidy kitchen, calm evenings and a shared coffee before class.",
+   "tone": "blue"
+  },
+  {
+   "id": "r3b",
+   "name": "Dana S.",
+   "university": "Nazarbayev University",
+   "budget": 130000,
+   "district": "Nura",
+   "smoking": "Non-smoker",
+   "pets": "Pet-friendly",
+   "lifestyle": "Social",
+   "sleep": "Night owl",
+   "bio": "Easy-going and social. Looking for a roommate who enjoys a good chat and respects personal space.",
+   "tone": "purple"
+  },
+  {
+   "id": "r3c",
+   "name": "Adil N.",
+   "university": "Nazarbayev University",
+   "budget": 85000,
+   "district": "Almaty",
+   "smoking": "Smoker",
+   "pets": "No pets",
+   "lifestyle": "Balanced",
+   "sleep": "Flexible",
+   "bio": "Into programming, football and cooking. Looking to share a place from November.",
+   "tone": "green"
+  },
+  {
+   "id": "r4a",
+   "name": "Alex M.",
+   "university": "Other",
+   "budget": 100000,
+   "district": "Yesil",
+   "smoking": "Non-smoker",
+   "pets": "No pets",
+   "lifestyle": "Quiet",
+   "sleep": "Early bird",
+   "bio": "First-year student. I like a tidy kitchen, calm evenings and a shared coffee before class.",
+   "tone": "blue"
+  },
+  {
+   "id": "r4b",
+   "name": "Sofia L.",
+   "university": "Other",
+   "budget": 130000,
+   "district": "Nura",
+   "smoking": "Non-smoker",
+   "pets": "Pet-friendly",
+   "lifestyle": "Social",
+   "sleep": "Night owl",
+   "bio": "Easy-going and social. Looking for a roommate who enjoys a good chat and respects personal space.",
+   "tone": "purple"
+  },
+  {
+   "id": "r4c",
+   "name": "Max K.",
+   "university": "Other",
+   "budget": 85000,
+   "district": "Almaty",
+   "smoking": "Smoker",
+   "pets": "No pets",
+   "lifestyle": "Balanced",
+   "sleep": "Flexible",
+   "bio": "Into programming, football and cooking. Looking to share a place from November.",
+   "tone": "green"
+  }
+ ],
+ "products": [
+  {
+   "id": "p0a",
+   "name": "Calculus textbook",
+   "category": "Books",
+   "price": 4500,
+   "seller": "Aisha N.",
+   "university": "AITU",
+   "condition": "Good condition",
+   "icon": "book",
+   "photo": true
+  },
+  {
+   "id": "p0b",
+   "name": "Wireless keyboard",
+   "category": "Electronics",
+   "price": 12000,
+   "seller": "Arman T.",
+   "university": "AITU",
+   "condition": "Like new",
+   "icon": "laptop"
+  },
+  {
+   "id": "p0c",
+   "name": "Desk lamp",
+   "category": "Dorm stuff",
+   "price": 5000,
+   "seller": "Madina K.",
+   "university": "AITU",
+   "condition": "Good condition",
+   "icon": "home"
+  },
+  {
+   "id": "p0d",
+   "name": "University hoodie",
+   "category": "Clothes",
+   "price": 7000,
+   "seller": "Timur K.",
+   "university": "AITU",
+   "condition": "Size M",
+   "icon": "tag"
+  },
+  {
+   "id": "p0e",
+   "name": "A4 notebook bundle",
+   "category": "Other",
+   "price": 2000,
+   "seller": "Dias N.",
+   "university": "AITU",
+   "condition": "Unused",
+   "icon": "bag"
+  },
+  {
+   "id": "p1a",
+   "name": "Calculus textbook",
+   "category": "Books",
+   "price": 4500,
+   "seller": "Aisha N.",
+   "university": "ENU",
+   "condition": "Good condition",
+   "icon": "book",
+   "photo": true
+  },
+  {
+   "id": "p1b",
+   "name": "Wireless keyboard",
+   "category": "Electronics",
+   "price": 12000,
+   "seller": "Arman T.",
+   "university": "ENU",
+   "condition": "Like new",
+   "icon": "laptop"
+  },
+  {
+   "id": "p1c",
+   "name": "Desk lamp",
+   "category": "Dorm stuff",
+   "price": 5000,
+   "seller": "Madina K.",
+   "university": "ENU",
+   "condition": "Good condition",
+   "icon": "home"
+  },
+  {
+   "id": "p1d",
+   "name": "University hoodie",
+   "category": "Clothes",
+   "price": 7000,
+   "seller": "Timur K.",
+   "university": "ENU",
+   "condition": "Size M",
+   "icon": "tag"
+  },
+  {
+   "id": "p1e",
+   "name": "A4 notebook bundle",
+   "category": "Other",
+   "price": 2000,
+   "seller": "Dias N.",
+   "university": "ENU",
+   "condition": "Unused",
+   "icon": "bag"
+  },
+  {
+   "id": "p2a",
+   "name": "Calculus textbook",
+   "category": "Books",
+   "price": 4500,
+   "seller": "Aisha N.",
+   "university": "MNU",
+   "condition": "Good condition",
+   "icon": "book",
+   "photo": true
+  },
+  {
+   "id": "p2b",
+   "name": "Wireless keyboard",
+   "category": "Electronics",
+   "price": 12000,
+   "seller": "Arman T.",
+   "university": "MNU",
+   "condition": "Like new",
+   "icon": "laptop"
+  },
+  {
+   "id": "p2c",
+   "name": "Desk lamp",
+   "category": "Dorm stuff",
+   "price": 5000,
+   "seller": "Madina K.",
+   "university": "MNU",
+   "condition": "Good condition",
+   "icon": "home"
+  },
+  {
+   "id": "p2d",
+   "name": "University hoodie",
+   "category": "Clothes",
+   "price": 7000,
+   "seller": "Timur K.",
+   "university": "MNU",
+   "condition": "Size M",
+   "icon": "tag"
+  },
+  {
+   "id": "p2e",
+   "name": "A4 notebook bundle",
+   "category": "Other",
+   "price": 2000,
+   "seller": "Dias N.",
+   "university": "MNU",
+   "condition": "Unused",
+   "icon": "bag"
+  },
+  {
+   "id": "p3a",
+   "name": "Calculus textbook",
+   "category": "Books",
+   "price": 4500,
+   "seller": "Aisha N.",
+   "university": "Nazarbayev University",
+   "condition": "Good condition",
+   "icon": "book",
+   "photo": true
+  },
+  {
+   "id": "p3b",
+   "name": "Wireless keyboard",
+   "category": "Electronics",
+   "price": 12000,
+   "seller": "Arman T.",
+   "university": "Nazarbayev University",
+   "condition": "Like new",
+   "icon": "laptop"
+  },
+  {
+   "id": "p3c",
+   "name": "Desk lamp",
+   "category": "Dorm stuff",
+   "price": 5000,
+   "seller": "Madina K.",
+   "university": "Nazarbayev University",
+   "condition": "Good condition",
+   "icon": "home"
+  },
+  {
+   "id": "p3d",
+   "name": "University hoodie",
+   "category": "Clothes",
+   "price": 7000,
+   "seller": "Timur K.",
+   "university": "Nazarbayev University",
+   "condition": "Size M",
+   "icon": "tag"
+  },
+  {
+   "id": "p3e",
+   "name": "A4 notebook bundle",
+   "category": "Other",
+   "price": 2000,
+   "seller": "Dias N.",
+   "university": "Nazarbayev University",
+   "condition": "Unused",
+   "icon": "bag"
+  },
+  {
+   "id": "p4a",
+   "name": "Calculus textbook",
+   "category": "Books",
+   "price": 4500,
+   "seller": "Aisha N.",
+   "university": "Other",
+   "condition": "Good condition",
+   "icon": "book",
+   "photo": true
+  },
+  {
+   "id": "p4b",
+   "name": "Wireless keyboard",
+   "category": "Electronics",
+   "price": 12000,
+   "seller": "Arman T.",
+   "university": "Other",
+   "condition": "Like new",
+   "icon": "laptop"
+  },
+  {
+   "id": "p4c",
+   "name": "Desk lamp",
+   "category": "Dorm stuff",
+   "price": 5000,
+   "seller": "Madina K.",
+   "university": "Other",
+   "condition": "Good condition",
+   "icon": "home"
+  },
+  {
+   "id": "p4d",
+   "name": "University hoodie",
+   "category": "Clothes",
+   "price": 7000,
+   "seller": "Timur K.",
+   "university": "Other",
+   "condition": "Size M",
+   "icon": "tag"
+  },
+  {
+   "id": "p4e",
+   "name": "A4 notebook bundle",
+   "category": "Other",
+   "price": 2000,
+   "seller": "Dias N.",
+   "university": "Other",
+   "condition": "Unused",
+   "icon": "bag"
+  }
+ ],
+ "posts": [
+  {
+   "id": "f0a",
+   "name": "Arman T.",
+   "university": "AITU",
+   "category": "Study",
+   "time": "12 min ago",
+   "text": "Кто хочет сегодня вечером разобрать Calculus? Собираемся в библиотеке в 18:00. Вместе точно справимся 📚",
+   "likes": 18,
+   "comments": 7,
+   "followed": true,
+   "tone": "blue"
+  },
+  {
+   "id": "f0b",
+   "name": "Madina K.",
+   "university": "AITU",
+   "category": "Housing",
+   "time": "38 min ago",
+   "text": "Ищу roommate рядом с AITU с ноября. Бюджет до 120 000 ₸, люблю порядок и спокойные вечера. Кто тоже в поиске?",
+   "likes": 12,
+   "comments": 4,
+   "followed": false,
+   "tone": "purple"
+  },
+  {
+   "id": "f0c",
+   "name": "Programming Club",
+   "university": "AITU",
+   "category": "Events",
+   "time": "1 hour ago",
+   "text": "Small teams. Big ideas. Our campus hackathon is coming on October 12. Beginners welcome — bring your curiosity!",
+   "likes": 32,
+   "comments": 9,
+   "followed": true,
+   "tone": "green"
+  },
+  {
+   "id": "f0d",
+   "name": "Aisha N.",
+   "university": "AITU",
+   "category": "Question",
+   "time": "2 hours ago",
+   "text": "Where’s your favourite quiet study spot on campus? Looking for somewhere to focus between classes.",
+   "likes": 9,
+   "comments": 5,
+   "followed": false,
+   "tone": "orange"
+  },
+  {
+   "id": "f0e",
+   "name": "Timur K.",
+   "university": "AITU",
+   "category": "Marketplace",
+   "time": "3 hours ago",
+   "text": "Passing on my first-year Calculus textbook. Good condition, lots of useful notes. Campus pickup is easiest!",
+   "likes": 6,
+   "comments": 2,
+   "followed": true,
+   "tone": "blue"
+  },
+  {
+   "id": "f0f",
+   "name": "Dias N.",
+   "university": "AITU",
+   "category": "Campus Life",
+   "time": "4 hours ago",
+   "text": "A coffee after class and a walk with friends. Sometimes that’s the best part of the week ☕",
+   "likes": 24,
+   "comments": 3,
+   "followed": false,
+   "tone": "purple"
+  },
+  {
+   "id": "f1a",
+   "name": "Aruzhan K.",
+   "university": "ENU",
+   "category": "Study",
+   "time": "12 min ago",
+   "text": "Кто хочет сегодня вечером разобрать Calculus? Собираемся в библиотеке в 18:00. Вместе точно справимся 📚",
+   "likes": 18,
+   "comments": 7,
+   "followed": true,
+   "tone": "blue"
+  },
+  {
+   "id": "f1b",
+   "name": "Madi B.",
+   "university": "ENU",
+   "category": "Housing",
+   "time": "38 min ago",
+   "text": "Ищу roommate рядом с ENU с ноября. Бюджет до 120 000 ₸, люблю порядок и спокойные вечера. Кто тоже в поиске?",
+   "likes": 12,
+   "comments": 4,
+   "followed": false,
+   "tone": "purple"
+  },
+  {
+   "id": "f1c",
+   "name": "Programming Club",
+   "university": "ENU",
+   "category": "Events",
+   "time": "1 hour ago",
+   "text": "Small teams. Big ideas. Our campus hackathon is coming on October 12. Beginners welcome — bring your curiosity!",
+   "likes": 32,
+   "comments": 9,
+   "followed": true,
+   "tone": "green"
+  },
+  {
+   "id": "f1d",
+   "name": "Aisha N.",
+   "university": "ENU",
+   "category": "Question",
+   "time": "2 hours ago",
+   "text": "Where’s your favourite quiet study spot on campus? Looking for somewhere to focus between classes.",
+   "likes": 9,
+   "comments": 5,
+   "followed": false,
+   "tone": "orange"
+  },
+  {
+   "id": "f1e",
+   "name": "Timur K.",
+   "university": "ENU",
+   "category": "Marketplace",
+   "time": "3 hours ago",
+   "text": "Passing on my first-year Calculus textbook. Good condition, lots of useful notes. Campus pickup is easiest!",
+   "likes": 6,
+   "comments": 2,
+   "followed": true,
+   "tone": "blue"
+  },
+  {
+   "id": "f1f",
+   "name": "Dias N.",
+   "university": "ENU",
+   "category": "Campus Life",
+   "time": "4 hours ago",
+   "text": "A coffee after class and a walk with friends. Sometimes that’s the best part of the week ☕",
+   "likes": 24,
+   "comments": 3,
+   "followed": false,
+   "tone": "purple"
+  },
+  {
+   "id": "f2a",
+   "name": "Daniyar M.",
+   "university": "MNU",
+   "category": "Study",
+   "time": "12 min ago",
+   "text": "Кто хочет сегодня вечером разобрать Calculus? Собираемся в библиотеке в 18:00. Вместе точно справимся 📚",
+   "likes": 18,
+   "comments": 7,
+   "followed": true,
+   "tone": "blue"
+  },
+  {
+   "id": "f2b",
+   "name": "Dana R.",
+   "university": "MNU",
+   "category": "Housing",
+   "time": "38 min ago",
+   "text": "Ищу roommate рядом с MNU с ноября. Бюджет до 120 000 ₸, люблю порядок и спокойные вечера. Кто тоже в поиске?",
+   "likes": 12,
+   "comments": 4,
+   "followed": false,
+   "tone": "purple"
+  },
+  {
+   "id": "f2c",
+   "name": "Programming Club",
+   "university": "MNU",
+   "category": "Events",
+   "time": "1 hour ago",
+   "text": "Small teams. Big ideas. Our campus hackathon is coming on October 12. Beginners welcome — bring your curiosity!",
+   "likes": 32,
+   "comments": 9,
+   "followed": true,
+   "tone": "green"
+  },
+  {
+   "id": "f2d",
+   "name": "Aisha N.",
+   "university": "MNU",
+   "category": "Question",
+   "time": "2 hours ago",
+   "text": "Where’s your favourite quiet study spot on campus? Looking for somewhere to focus between classes.",
+   "likes": 9,
+   "comments": 5,
+   "followed": false,
+   "tone": "orange"
+  },
+  {
+   "id": "f2e",
+   "name": "Timur K.",
+   "university": "MNU",
+   "category": "Marketplace",
+   "time": "3 hours ago",
+   "text": "Passing on my first-year Calculus textbook. Good condition, lots of useful notes. Campus pickup is easiest!",
+   "likes": 6,
+   "comments": 2,
+   "followed": true,
+   "tone": "blue"
+  },
+  {
+   "id": "f2f",
+   "name": "Dias N.",
+   "university": "MNU",
+   "category": "Campus Life",
+   "time": "4 hours ago",
+   "text": "A coffee after class and a walk with friends. Sometimes that’s the best part of the week ☕",
+   "likes": 24,
+   "comments": 3,
+   "followed": false,
+   "tone": "purple"
+  },
+  {
+   "id": "f3a",
+   "name": "Amina S.",
+   "university": "Nazarbayev University",
+   "category": "Study",
+   "time": "12 min ago",
+   "text": "Кто хочет сегодня вечером разобрать Calculus? Собираемся в библиотеке в 18:00. Вместе точно справимся 📚",
+   "likes": 18,
+   "comments": 7,
+   "followed": true,
+   "tone": "blue"
+  },
+  {
+   "id": "f3b",
+   "name": "Alikhan T.",
+   "university": "Nazarbayev University",
+   "category": "Housing",
+   "time": "38 min ago",
+   "text": "Ищу roommate рядом с Nazarbayev University с ноября. Бюджет до 120 000 ₸, люблю порядок и спокойные вечера. Кто тоже в поиске?",
+   "likes": 12,
+   "comments": 4,
+   "followed": false,
+   "tone": "purple"
+  },
+  {
+   "id": "f3c",
+   "name": "Programming Club",
+   "university": "Nazarbayev University",
+   "category": "Events",
+   "time": "1 hour ago",
+   "text": "Small teams. Big ideas. Our campus hackathon is coming on October 12. Beginners welcome — bring your curiosity!",
+   "likes": 32,
+   "comments": 9,
+   "followed": true,
+   "tone": "green"
+  },
+  {
+   "id": "f3d",
+   "name": "Aisha N.",
+   "university": "Nazarbayev University",
+   "category": "Question",
+   "time": "2 hours ago",
+   "text": "Where’s your favourite quiet study spot on campus? Looking for somewhere to focus between classes.",
+   "likes": 9,
+   "comments": 5,
+   "followed": false,
+   "tone": "orange"
+  },
+  {
+   "id": "f3e",
+   "name": "Timur K.",
+   "university": "Nazarbayev University",
+   "category": "Marketplace",
+   "time": "3 hours ago",
+   "text": "Passing on my first-year Calculus textbook. Good condition, lots of useful notes. Campus pickup is easiest!",
+   "likes": 6,
+   "comments": 2,
+   "followed": true,
+   "tone": "blue"
+  },
+  {
+   "id": "f3f",
+   "name": "Dias N.",
+   "university": "Nazarbayev University",
+   "category": "Campus Life",
+   "time": "4 hours ago",
+   "text": "A coffee after class and a walk with friends. Sometimes that’s the best part of the week ☕",
+   "likes": 24,
+   "comments": 3,
+   "followed": false,
+   "tone": "purple"
+  },
+  {
+   "id": "f4a",
+   "name": "Nikita V.",
+   "university": "Other",
+   "category": "Study",
+   "time": "12 min ago",
+   "text": "Кто хочет сегодня вечером разобрать Calculus? Собираемся в библиотеке в 18:00. Вместе точно справимся 📚",
+   "likes": 18,
+   "comments": 7,
+   "followed": true,
+   "tone": "blue"
+  },
+  {
+   "id": "f4b",
+   "name": "Sofia L.",
+   "university": "Other",
+   "category": "Housing",
+   "time": "38 min ago",
+   "text": "Ищу roommate рядом с кампусом с ноября. Бюджет до 120 000 ₸, люблю порядок и спокойные вечера. Кто тоже в поиске?",
+   "likes": 12,
+   "comments": 4,
+   "followed": false,
+   "tone": "purple"
+  },
+  {
+   "id": "f4c",
+   "name": "Programming Club",
+   "university": "Other",
+   "category": "Events",
+   "time": "1 hour ago",
+   "text": "Small teams. Big ideas. Our campus hackathon is coming on October 12. Beginners welcome — bring your curiosity!",
+   "likes": 32,
+   "comments": 9,
+   "followed": true,
+   "tone": "green"
+  },
+  {
+   "id": "f4d",
+   "name": "Aisha N.",
+   "university": "Other",
+   "category": "Question",
+   "time": "2 hours ago",
+   "text": "Where’s your favourite quiet study spot on campus? Looking for somewhere to focus between classes.",
+   "likes": 9,
+   "comments": 5,
+   "followed": false,
+   "tone": "orange"
+  },
+  {
+   "id": "f4e",
+   "name": "Timur K.",
+   "university": "Other",
+   "category": "Marketplace",
+   "time": "3 hours ago",
+   "text": "Passing on my first-year Calculus textbook. Good condition, lots of useful notes. Campus pickup is easiest!",
+   "likes": 6,
+   "comments": 2,
+   "followed": true,
+   "tone": "blue"
+  },
+  {
+   "id": "f4f",
+   "name": "Dias N.",
+   "university": "Other",
+   "category": "Campus Life",
+   "time": "4 hours ago",
+   "text": "A coffee after class and a walk with friends. Sometimes that’s the best part of the week ☕",
+   "likes": 24,
+   "comments": 3,
+   "followed": false,
+   "tone": "purple"
+  }
+ ]
+}
