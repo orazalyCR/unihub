@@ -22,14 +22,6 @@ DATABASE_URL = os.environ.get("DATABASE_URL")
 # (mirrors sqlite3.IntegrityError, which the original code catches).
 IntegrityError = psycopg2.IntegrityError
 
-# psycopg2 returns BYTEA columns as memoryview by default; the app treats
-# pw_salt/pw_hash as plain bytes (hashlib.scrypt, hmac.compare_digest), so
-# cast bytea straight to bytes everywhere, matching sqlite3's behaviour.
-_BYTEA_OID = 17
-psycopg2.extensions.register_type(
-    psycopg2.extensions.new_type((_BYTEA_OID,), "BYTEA_AS_BYTES", lambda v, c: bytes(v) if v is not None else None)
-)
-
 _pool = None
 
 
@@ -42,8 +34,18 @@ def _get_pool():
     return _pool
 
 
+def _plain(v):
+    # psycopg2 returns BYTEA columns as memoryview by default; the app
+    # treats pw_salt/pw_hash as plain bytes (hashlib.scrypt,
+    # hmac.compare_digest), so normalize to bytes here, matching sqlite3.
+    return bytes(v) if isinstance(v, memoryview) else v
+
+
 class Row(dict):
     """Dict that also supports positional access (row[0]), like sqlite3.Row."""
+
+    def __init__(self, mapping):
+        super().__init__((k, _plain(v)) for k, v in mapping.items())
 
     def __getitem__(self, key):
         if isinstance(key, int):
