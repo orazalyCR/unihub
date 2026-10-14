@@ -1,0 +1,7 @@
+[project]
+name = "unihub-vercel"
+version = "1.0.0"
+requires-python = ">=3.12"
+
+[tool.vercel.scripts]
+build = "python build_static.py"

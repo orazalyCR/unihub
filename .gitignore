@@ -5,3 +5,6 @@ qa/
 **/*.db
 **/*.db-*
 **/*.log
+/public/
+.vercel/
+.venv/
