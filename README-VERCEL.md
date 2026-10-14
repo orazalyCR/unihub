@@ -1,74 +1,43 @@
 # UniHub на Vercel
 
 Второй, независимый способ запуска сайта — рядом с Render/локальным `unihub/server.py`,
-ничего в нём не меняя. Бэкенд здесь — Flask (`app.py`) + Postgres вместо файла SQLite,
-потому что у Vercel нет диска и постоянного процесса. Бизнес-логика (`vercel_features.py`)
-— построчная копия `unihub/features.py`, адаптированная только там, где это требует
-Postgres. Статика (`site/*.html`, `app.js`, `styles.css`) копируется в `public/` на каждой
-сборке из `unihub/site` — то есть это ровно тот же интерфейс, что и на Render, обновлять
-нужно только одно место.
+ничего в нём не меняя. Бэкенд здесь — Flask (`app.py`) + Postgres (Neon) вместо файла
+SQLite, потому что у Vercel нет диска и постоянного процесса. Бизнес-логика
+(`vercel_features.py`) — построчная копия `unihub/features.py`. Статика (`site/*.html`,
+`app.js`, `styles.css`) копируется в `public/` из `unihub/site` — то есть это ровно тот
+же интерфейс, что и на Render, обновлять нужно только одно место.
 
-Я прогнал бизнес-логику (регистрацию, вход, лайки, подписки, сообщения, маркетплейс,
-rate-limit, права владельца) через 31 автоматическую проверку локально — все прошли.
-То, что нельзя было проверить без вашей реальной базы — перевод SQL под Postgres — проверено
-отдельно юнит-тестами и `verify_postgres.py` ниже.
+**Текущий статус: задеплоено и работает.**
+Прод: https://unihubb.vercel.app · `DATABASE_URL` подключён к Neon.
 
-## 1. Создайте бесплатную базу на Neon (2 минуты, без карты)
+## Если меняете `unihub/site/*` — не забудьте `public/`
 
-1. Зайдите на [neon.tech](https://neon.tech), зарегистрируйтесь (можно через GitHub).
-2. Создайте проект. Любой регион.
-3. На странице проекта нажмите **Connect** → выберите **Pooled connection** (это важно,
-   не Direct) → скопируйте строку вида:
-   ```
-   postgresql://user:password@ep-xxx-pooler.region.aws.neon.tech/neondb?sslmode=require
-   ```
-
-## 2. Проверьте подключение локально, до деплоя
+Vercel распознаёт `public/**` как статику, только если эта папка уже есть в
+закоммиченных файлах — генерировать её прямо во время билда слишком поздно (Vercel уже
+решает, что раздавать через CDN, до того как успевает отработать build-скрипт). Поэтому
+`public/` закоммичена в репозиторий как обычная папка, и после правок в `unihub/site/`
+перед коммитом нужно:
 
 ```bash
-cd unihub-master
-pip install -r requirements.txt
+python build_static.py
+git add public
 ```
 
-PowerShell:
-```powershell
-$env:DATABASE_URL="postgresql://...pooler..."
-python verify_postgres.py
-```
+## Если нужно поднять всё с нуля (другой аккаунт / другой проект)
 
-Должно напечатать 5 шагов с `OK` и в конце "All checks passed". Если что-то не так —
-сюда же упадёт понятная ошибка (чаще всего — скопирована Direct-строка вместо Pooled,
-или забыт `?sslmode=require`).
-
-## 3. Выложите код на GitHub
-
-Если репозиторий ещё не инициализирован:
-```bash
-git init
-git add .
-git commit -m "Add Vercel deployment (Flask + Postgres)"
-git branch -M main
-git remote add origin https://github.com/<ваш-аккаунт>/unihub.git
-git push -u origin main
-```
-
-## 4. Подключите проект в Vercel
-
-1. [vercel.com](https://vercel.com) → Sign up (через GitHub — проще всего).
-2. **Add New** → **Project** → выберите этот репозиторий.
-3. Vercel сам распознает Flask (`app.py` + `requirements.txt`) — ничего настраивать
-   руками не нужно, **Root Directory** оставьте пустым (корень репозитория).
-4. В **Environment Variables** добавьте:
-   - `DATABASE_URL` = та же pooled-строка из шага 1.
-5. **Deploy**.
-
-Сборка на Vercel сама запустит `build_static.py` (прописано в `pyproject.toml`) и
-скопирует `unihub/site` → `public/`, затем применит схему к базе при первом запросе.
-
-## 5. Проверка после деплоя
-
-Откройте `https://<ваш-проект>.vercel.app/api/health` — должно вернуть JSON
-`{"app": "UniHub", ...}`. Затем откройте сам сайт и зарегистрируйтесь.
+1. **Neon** (2 минуты, без карты): [neon.tech](https://neon.tech) → создать проект →
+   Connect → **Pooled connection** (не Direct) → скопировать строку.
+2. Проверить её локально:
+   ```powershell
+   $env:DATABASE_URL="postgresql://...pooler..."
+   python verify_postgres.py
+   ```
+   Должно напечатать 5 шагов с `OK`.
+3. `python build_static.py && git add -A && git commit -m "..." && git push`
+4. На [vercel.com/new](https://vercel.com/new) → Import repo → Vercel сам распознает
+   Flask — Root Directory оставить пустым → в Environment Variables добавить
+   `DATABASE_URL` → Deploy.
+5. Проверка: `https://<проект>.vercel.app/api/health` → `{"app": "UniHub", ...}`.
 
 ## Что здесь иначе, чем на Render, и почему это нормально
 
@@ -94,5 +63,5 @@ git push -u origin main
   пришлось переписывать.
 - `schema_postgres.sql` — то же самое устройство базы, что в `unihub/server.py` +
   `unihub/features.py`, переведённое на синтаксис Postgres.
-- `build_static.py` — копирует `unihub/site` → `public/` при каждой сборке.
-- `verify_postgres.py` — одноразовая проверка перед первым деплоем (шаг 2 выше).
+- `build_static.py` — копирует `unihub/site` → `public/`.
+- `verify_postgres.py` — проверка подключения к базе перед/после правок.
